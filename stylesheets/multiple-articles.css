@@ -1,0 +1,52 @@
+main > div.multi-articles {
+    max-width: 1200px;
+}
+main > div.multi-articles a:hover article {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+main > div.multi-articles a:hover article header {
+    height: 100%;
+}
+main > div.multi-articles article {
+    -webkit-transition: .1s;
+    transition: .1s;
+    opacity: .8;
+    border: 0px;
+    padding: 0px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-position: center center;
+    background-size: cover;
+}
+main > div.multi-articles article header {
+    color: #FFF;
+    padding: 20px;
+    height: 40%;
+    height: 100%;
+}
+main > div.multi-articles article header h1 {
+    font-weight: bold;
+}
+@media (min-width: 580px) {
+    main > div.multi-articles article header h1 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 579px) {
+    main > div.multi-articles article header h1 {
+        font-size: 18px;
+    }
+}
+main > div.multi-articles article img {
+    max-width: 100%;
+    max-height: 100px;
+    margin: 0 auto;
+    display: block;
+    /* Might not be able to show logos */
+    display: none;
+}
+main > di

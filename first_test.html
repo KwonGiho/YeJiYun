@@ -1,0 +1,187 @@
+<html><head>
+    <title>Kindle &amp; Fire Mobile Comparison Table – Matt Soave</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="author" href="https://plus.google.com/u/0/103520907987098229443">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700|Roboto+Slab:100,300,400,700|Roboto+Condensed:400italic,700italic,400,700" rel="stylesheet" type="text/css">
+    <link href="stylesheets/reset.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/clearfix.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/global.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/header.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/multiple-articles.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/multiple-articles-projects.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/single-article.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/single-article-project.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/single-article-writing.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/single-article-about.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/hide.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/plugins/scrollTo-min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+        function boldNav(section) {
+            $(".navs").removeClass("nav-active");
+            var navItem = "#nav-";
+            switch (section) {
+                case "projects":
+                    navItem += "1";
+                    break;
+                case "writing":
+                    navItem += "2";
+                    break;
+                case "about":
+                    navItem += "3";
+                    break;
+                default:
+                    break;
+            }
+
+            $(navItem).addClass("nav-active");
+        }
+    </script>
+    <style>
+        div.click {
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            background-color: #0080ff;
+            animation: click .3s;
+            opacity: 0;
+            position: absolute;
+            z-index: 3;
+        }
+
+        @-webkit-keyframes click {
+            0% {
+                -webkit-transform:scale(0);
+                opacity: .75;
+            }
+            50% {
+                opacity: .75;
+            }
+            100% {
+                -webkit-transform:scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+    <link rel="shortcut icon" href="assets/favicon.png">	</head>
+<body>
+<header id="main-header" class="">
+    <div id="header-container">
+        <!--<p id="home-hider-1" class="home-hiders">Hi. I'm </p>-->
+        <!--<h1><a href="index.php">Matt&nbsp;Soave </a></h1>-->
+        <!--<p id="home-hider-2" class="home-hiders">I'm an </p>-->
+        <!--<p id="job-title"><span>Interaction&nbsp;+&nbsp;User&nbsp;Experience&nbsp;Designer </span></p>-->
+        <!--<p id="home-hider-3" class="home-hiders">and sometimes a front-end developer. </p>-->
+        <!--<p id="home-hider-4" class="home-hiders">I enjoy learning about how people interact with their world and working to improve those experiences. I'm particularly interested in analytics-driven design and data visualization. </p>-->
+        <img src="assets/nav-icon-projects.svg" class="nav-icons home-hiders" id="nav-icon-projects"><a href="projects.php" id="nav-1" class="navs nav-active">Projects</a><p id="home-hider-5" class="home-hiders home-nav-descs"> - See the work I've done. </p>
+        <img src="assets/nav-icon-writing.svg" class="nav-icons home-hiders" id="nav-icon-writing"><a href="writing.php" id="nav-2" class="navs">Writing</a><p id="home-hider-6" class="home-hiders home-nav-descs"> - Read some of my (admittedly infrequent) writing. </p>
+        <img src="assets/nav-icon-about.svg" class="nav-icons home-hiders" id="nav-icon-about"><a href="about.php" id="nav-3" class="navs">About</a><p id="home-hider-7" class="home-hiders home-nav-descs"> - Learn more about me and the work I like to do. </p>
+        <div id="home-screen"></div>
+    </div>
+</header>
+<main>
+    <div class="single-article single-article-project" id="">
+        <script>boldNav("projects");</script>
+        <p class="up-one-level"><a href="projects.php">« Back to Projects</a></p>
+        <article class="cf" style="border-top:20px solid rgba(114, 0, 221, 1)">
+            <!--<article class="cf" style="border-top-color: rgba(114, 0, 221, 1); border-bottom-color: rgba(114, 0, 221, .5);">-->
+            <!--<article class="cf" style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+            <header>
+                <h1 id="page-title" itemprop="name">QandA UX Redesign</h1>
+                <p>UX Redesign</p>
+
+            </header>
+
+            <aside>
+                <!-- THIS NEEDS TO BE RELATIVE LATER -->
+                <dl>
+
+                    <div class="metadata">
+                        <dt>Date</dt>
+                        <dd>July-August, 2016</dd></div>
+
+
+                    <div class="metadata">
+                        <dt>Platform</dt>
+                        <dd>Android App</dd></div>
+
+                    <div class="metadata">
+                        <dt>Tasks</dt>
+                        <dd>User data analysis</dd>
+                        <dd>Persona</dd>
+                        <dd>User flow</dd>
+                        <dd>Usability test</dd>
+                        <dd>UI planning</dd>
+                    </div>
+
+                    <div class="metadata">
+                        <dt>Tools</dt>
+                        <dd> Adobe Illustrator</dd><dd> HTML</dd><dd> CSS</dd><dd> JavaScript</dd> </div>
+                </dl>
+            </aside>
+
+            <!-- Summary -->
+            <section>
+                <h1>Summary</h1>
+                <p>Math education service via sending photo. Students upload problem photo and they will get answer from teacher via photo. For their business goal that build recommendation system for student grade and their own progress, it is important to save users problem as dataset.</p><p></p>
+                <figure><img src="images/1/1.png"><figcaption>An image showing the way the table flows beyond the device screen.
+                </figcaption></figure>						<!---->
+            </section>
+
+            <!-- Problem -->
+            <section>
+                <h1>Problem</h1>
+                <br/>
+                <p>-	User flow got complicated which makes users confuse to find way to get function<br/>
+                    -	Users want to delete their data when they finish own request that is quite critical issue to QandA recommendation system<br/>
+                    -	Main page is not organized based on user behavior<br/>
+                </p>
+                <!--<figure><img src="/projects/kindlecompchart/old_compare.png"><figcaption>Two screenshots from the old comparison table. This version was information-dense, but had poor visual design and usability, especially when scrolling.-->
+                <!--</figcaption></figure>-->
+                <!--<p>We wanted to create a table that allowed the customer to retain the context of each row and column and present the data in a way that afforded better comparisons within each property.</p>-->
+            </section>
+
+            <!-- Process -->
+            <section>
+                <h1>Process</h1>
+                <br/>
+                <p><strong>1. User data analysis (analytics and users service center request)</strong></p>
+                <p>To make research question clear and specific, figure out data which pages are popular and which contents users never pay attention to via google analytics. Data revealed study contents function browsed only 18%(5573) and other users’ request list is 3%(907).</p>
+
+                <p><strong>1-1. Service center request</strong></p>
+                <p>The biggest challenge is asking delete users request data. They want to other users do not know that they ask question. It is almost 30% of complaints.</p>
+
+                <p><strong>2. Persona Redefinition</strong></p>
+                <p>Initial persona was just middle and high school student. Clients thought real customer who pay for this app was parents. Based on their user profile data and complain center review, persona redefinition is prior challenge.</p>
+                <figure><img src="images/1/2.png"></figure>
+
+                <p><strong>3.User flow reorganize</strong></p>
+                <p>User flow was reorganized to be consistent in and out process. And scrape and library section consolidated previously duplicated across a service to support intuitive usage based on user’s mental model.</p>
+                <figure><img src="images/1/3.png"></figure>
+
+                <p><strong>Usability test and Design</strong></p>
+                <figure>
+                    <img src="images/1/4.png">
+                    <figcaption>Main page can decide all the impression at once to user. Hence, reconstruct process ‘ask-wait-get response and achieve’ as mental model</figcaption>
+                    <img src="images/1/5.png">
+                    <figcaption>Delete ID labels that provide cue as to distinguish each user so that users feel comfortable to ask.</figcaption>
+                </figure>
+            </section>
+
+            <!-- Results -->
+            <section>
+                <h1>Lesson Learned</h1>
+                <p>-	Understanding clear persona is critical point since user might be totally different that what founder expect.<br/>
+                    -	Make simple flow as user’s mental model can help use intuitively.
+                </p>
+
+            </section>
+        </article>
+
+        <p class="next"><a href="project.php?id=58">Previous: HCI Theory in Google Maps »</a></p>
+    </div></main>
+
+</body></html>

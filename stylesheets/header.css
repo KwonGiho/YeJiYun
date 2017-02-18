@@ -1,0 +1,47 @@
+header,
+header div#header-container,
+header div#header-container * {
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0.42, 0.41, 0, 1);
+}
+header#main-header {
+    background-color: #FFF;
+    box-shadow: 0px 4px 0px 0px rgba(55, 101, 137, 0.04);
+}
+header#main-header div#header-container {
+    width: 100%;
+    padding: 50px;
+    position: relative;
+    margin: 0px auto;
+}
+header#main-header div#header-container * {
+    margin: 0;
+    display: inline;
+    position: absolute;
+}
+header#main-header div#header-container h1 {
+    color: #222;
+    font-weight: bold;
+    font-family: "Roboto Condensed";
+    line-height: 1;
+}
+header#main-header div#header-container h1 a {
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    transition-duration: 0s;
+}
+header#main-header div#header-container p#job-title {
+    color: #222;
+}
+header#main-header div#header-container .home-hiders {
+    opacity: 0;
+    transition-duration: .5s;
+    -webkit-animation: fadein;
+}
+header#main-header div#header-container .navs {
+    color: #222;
+    line-height: 1.25;
+    font-weight: 300;
+}
+header#main-header.home

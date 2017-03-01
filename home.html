@@ -1,0 +1,296 @@
+<html class="gr__mattsoave_com"><head>
+    <title>Matt Soave – User Experience &amp; Interaction Designer</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link rel="author" href="https://plus.google.com/u/0/103520907987098229443">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700|Roboto+Slab:100,300,400,700|Roboto+Condensed:400italic,700italic,400,700" rel="stylesheet" type="text/css">
+    <link href="stylesheets/reset.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/clearfix.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/global.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/header.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/multiple-articles.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/multiple-articles-projects.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/single-article.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/single-article-project.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/single-article-writing.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/single-article-about.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/hide.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/plugins/scrollTo-min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".home-hiders").click(function(){
+                $(".home-hiders").hide();
+            });
+        });
+        function boldNav(section) {
+            $(".navs").removeClass("nav-active");
+            var navItem = "#nav-";
+            switch (section) {
+                case "projects":
+                    navItem += "1";
+
+                    break;
+                case "writing":
+                    navItem += "2";
+                    break;
+                case "about":
+                    navItem += "3";
+                    break;
+                default:
+                    break;
+            }
+
+            $(navItem).addClass("nav-active");
+        }
+    </script>
+    <style>
+        div.click {
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            background-color: #0080ff;
+            animation: click .3s;
+            opacity: 0;
+            position: absolute;
+            z-index: 3;
+        }
+        /*.home-hiders.click{*/
+            /*display:none;*/
+        /*}*/
+
+
+        @-webkit-keyframes click {
+            0% {
+                -webkit-transform:scale(0);
+                opacity: .75;
+            }
+            50% {
+                opacity: .75;
+            }
+            100% {
+                -webkit-transform:scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+    <link rel="shortcut icon" href="assets/favicon.png">	</head>
+<body data-gr-c-s-loaded="true">
+<header id="main-header" class="home" >
+    <div id="header-container" >
+        <p id="home-hider-1" class="home-hiders">Hi. I'm </p>
+        <h1><a href="index.php">YeJi&nbsp;Yun </a></h1>
+        <p id="home-hider-2" class="home-hiders">I'm&nbsp;User&nbsp;Experience&nbsp;Researcher&nbsp;</p>
+        <!--<p id="job-title"><span>User&nbsp;Experience&nbsp;Researcher&nbsp;and&nbsp;Congnitive&nbsp;engineering&nbsp;psychologist</span></p>-->
+        <p id="home-hider-3" class="home-hiders">and&nbsp;Congnitive&nbsp;engineering&nbsp;psychologist</p>
+        <p id="home-hider-4" class="home-hiders">
+            I'm a problem solver who think diverse reasons and perspectives based on cognitive psychology especially vision perception, attention and reactance.
+            I want to make experiences easier and efficient experience.
+            I also develop web front-end and data mining.
+        </p>
+        <img src="assets/nav-icon-projects.svg" class="nav-icons home-hiders" id="nav-icon-projects"><a href="projects.php" id="nav-1" class="navs">Projects</a><p id="home-hider-5" class="home-hiders home-nav-descs"> - See the work I've done. </p>
+        <img src="assets/nav-icon-writing.svg" class="nav-icons home-hiders" id="nav-icon-writing"><a href="writing.php" id="nav-2" class="navs">Writing</a><p id="home-hider-6" class="home-hiders home-nav-descs"> - Read some of my (admittedly infrequent) writing. </p>
+        <img src="assets/nav-icon-about.svg" class="nav-icons home-hiders" id="nav-icon-about"><a href="about.php" id="nav-3" class="navs">About</a><p id="home-hider-7" class="home-hiders home-nav-descs"> - Learn more about me and the work I like to do. </p>
+        <div id="home-screen"></div>
+    </div>
+</header>
+<main id="is_hide" style="display: none;">
+    <div class="multi-articles multi-articles-projects cf" id="">
+        <script>boldNav("projects");</script>
+        <!--<p class="up-one-level"><a href="index.php">&laquo; Up One Level (Home)</a></p>-->
+        <header>
+            <h1 id="page-title">Projects</h1>
+        </header>
+        <p>Below is a small selection of some of the projects that I have worked on lately. This list is not comprehensive. <strong>Unfortunately, many of the projects that I've worked on are confidential and have therefore been excluded entirely or described with limited detail. Please contact me to learn more about additional experiences.</strong></p>
+        <a href="project.php?id=59">
+            <article style="background-image: url('assets/project_bgs/kindlecompchart.png');border-top-color: rgba(114, 0, 221, .9); border-bottom-color: rgba(114, 0, 221, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(114, 0, 221, .9);"><h1>Kindle &amp; Fire Mobile Comparison Table</h1><p>Mobile-optimized table for comparing Kindle and Fire devices. UX design, prototyping, and development guidance.</p></header>
+                <!--<p>I designed and prototyped a mobile-optimized comparison table to help customers better understand the differences between similar devices.</p>-->
+                <!--<footer><a href="project.php?id=59">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=58">
+            <article style="background-image: url('assets/project_bgs/hcde501.png');border-top-color: rgba(8, 118, 255, .9); border-bottom-color: rgba(8, 118, 255, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(8, 118, 255, .9);"><h1>HCI Theory in Google Maps</h1><p>Theoretical analysis of Google Maps through the lens of distributed cognition, semiotic engineering, and feminist HCI</p></header>
+                <!--<p>For my <em>Theoretical Foundations of Human Centered Design and Engineering</em> course, my group created a website to describe the application of three HCI theories to Google Maps. The theories we explored were distributed cognition, semiotic engineering, and feminist HCI.</p>-->
+                <!--<footer><a href="project.php?id=58">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=57">
+            <article style="background-image: url('assets/project_bgs/firephonedp.png');border-top-color: rgba(243, 83, 17, .9); border-bottom-color: rgba(243, 83, 17, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(243, 83, 17, .9);"><h1>Amazon Fire Phone Detail Page</h1><p>Usability testing, interaction design, and prototyping</p></header>
+                <!--<p>I created Axure and HTML prototypes to test the Amazon Wireless purchase flow and made design recommendations with each iteration.</p>
+<p>More details to come.</p>-->
+                <!--<footer><a href="project.php?id=57">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=49">
+            <article style="background-image: url('assets/project_bgs/gmobireports.png');border-top-color: rgba(102, 102, 102, .9); border-bottom-color: rgba(102, 102, 102, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(102, 102, 102, .9);"><h1>Business Intelligence Reporting</h1><p>Interaction design, visual mock-ups, and documentation</p></header>
+                <!--<p>I redesigned dozens of reports on an enterprise client's business intelligence platform by learning the business, gathering requirements (user, business, and technical) from the client, recognizing UX improvement opportunities, and adhering to patterns in the UX library we had previously established. The ongoing project requires intelligent solutions for data visualization and recommending optimal UX patterns for accomplishing functionality goals.</p>
+<p>Unfortunately, I am unable to show any screenshots of the designs publicly for confidentiality reasons.</p>-->
+                <!--<footer><a href="project.php?id=49">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=53">
+            <article style="background-image: url('assets/project_bgs/nationalparksvis.png');border-top-color: rgba(45, 75, 30, .9); border-bottom-color: rgba(45, 75, 30, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(45, 75, 30, .9);"><h1>Visualizing the U.S. National Park Service’s Inventory and Monitoring Program Data</h1><p>User research and Tableau data visualization</p></header>
+                <!--<p>I worked on a small team to build a Tableau-based data visualizations to allow users to sort through large tables of data about US National Park soil and vegetation. We followed a user-centered design process in which we interviewed and tested our designs with users, including experts in the field. Ultimately, we created a pair of dashboards in which users could filter large amounts of data to spot correlations and get details about individual items. The dashboards were built using data visualization best practices (such as using proper visual encoding methods and supporting ideal data interactions) learned in a graduate information visualization course at UW.</p>-->
+                <!--<footer><a href="project.php?id=53">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=52">
+            <article style="background-image: url('assets/project_bgs/buddysystem.png');border-top-color: rgba(220, 60, 0, .9); border-bottom-color: rgba(220, 60, 0, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(220, 60, 0, .9);"><h1>BuddySystem: Mobile Medical Help App</h1><p>Scenario development and interaction design</p></header>
+                <!--<p>For UW's 536, Interaction Design, we quickly designed a mobile application intended to communicate medical information to friends of patients. Our app concept would help users determine whether their friend needed medical assistance related to known conditions.</p>-->
+                <!--<footer><a href="project.php?id=52">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=47">
+            <article style="background-image: url('assets/project_bgs/xboxusability.png');border-top-color: rgba(76, 15, 20, .9); border-bottom-color: rgba(76, 15, 20, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(76, 15, 20, .9);"><h1>Tomb Raider Co-Discovery Study</h1><p>Usability test planning, running, and analyzing</p></header>
+                <!--<p>I conducted a user research study of an Xbox game for Microsoft's Studios User Research team. With a small team, we investigated the insights an experienced player provides to a novice player during the first hour of gameplay of the 2013 version of <strong>Tomb Raider</strong> for the Xbox 360.</p>
+<p>The project required the development of a rigorous study plan, execution of the study with 8 participant pairs, and analysis and presentation of our findings.</p>
+<p>Through the project, I learned a lot about usability testing and gained experience in designing a study to accomplish a particular research goal.</p>-->
+                <!--<footer><a href="project.php?id=47">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=46">
+            <article style="background-image: url('assets/project_bgs/hcde598.png');border-top-color: rgba(0, 175, 212, .9); border-bottom-color: rgba(0, 175, 212, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(0, 175, 212, .9);"><h1>"Bebo" Hydration App</h1><p>Conceptualization and interaction design</p></header>
+                <!--<p>For UW's HCDE 598 (The Business of Design), we conceptualized an application for monitoring water intake in order to encourage healthy habits and designed its onboarding process.</p>-->
+                <!--<footer><a href="project.php?id=46">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=40">
+            <article style="background-image: url('assets/project_bgs/gmobiuxl.png');border-top-color: rgba(127, 186, 0, .9); border-bottom-color: rgba(127, 186, 0, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(127, 186, 0, .9);"><h1>Business Intelligence UX Library</h1><p>Design library creation and management</p></header>
+                <!--<p>I helped create and populate a user experience component library for site owners and developers to properly build sites on one of an enterprise client's business intelligence platforms. The library has been immensely helpful for the design team, ensuring that we design consistently and efficiently.</p>-->
+                <!--<footer><a href="project.php?id=40">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=43">
+            <article style="background-image: url('assets/project_bgs/wagnpurr.png');border-top-color: rgba(28, 117, 186, .9); border-bottom-color: rgba(28, 117, 186, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(28, 117, 186, .9);"><h1>Wag-n-Purr Pet Care</h1><p>User research, ideation, and interaction design</p></header>
+                <!--<p>With a small team in UW's HCDE 518, I conducted user research; created wireframes, visual designs, a prototype, and detailed specifications; and performed basic user testing for a mobile application to support better pet care.</p>-->
+                <!--<footer><a href="project.php?id=43">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=44">
+            <article style="background-image: url('assets/project_bgs/facebookroles.png');border-top-color: rgba(59, 89, 152, .9); border-bottom-color: rgba(59, 89, 152, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(59, 89, 152, .9);"><h1>Facebook Roles</h1><p>Academic research and interaction design</p></header>
+                <!--<p>With a small team in UW's HCDE 505, I conducted extensive academic literature research to understand the problem space of social media context collapse, then proposed a role-based solution accompanied by a detailed paper justifying its design.</p>-->
+                <!--<footer><a href="project.php?id=44">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=42">
+            <article style="background-image: url('assets/project_bgs/mbaschools.png');border-top-color: rgba(154, 31, 46, .9); border-bottom-color: rgba(154, 31, 46, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(154, 31, 46, .9);"><h1>MBA School Guide and Matching Site</h1><p>Information architecture and interaction design</p></header>
+                <!--<p>I conducted competitive analyses, constructed the information architecture, created the overall interaction design, and contributed to visual design for a business school information and comparison site.</p>
+<p>The client needed a website that would allow prospective MBA students to learn about business school, then find the right school for them based on qualities that are important to them. They came to our team with compiled research results, a series of use cases, and a description of their plan for the site. Through a UX design process, I helped them re-envision the full site and design the overall experience.</p>-->
+                <!--<footer><a href="project.php?id=42">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=38">
+            <article style="background-image: url('assets/project_bgs/fulcrum.png');border-top-color: rgba(92, 126, 145, .9); border-bottom-color: rgba(92, 126, 145, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(92, 126, 145, .9);"><h1>Fulcrum CATS Mobility Refresh</h1><p>Android interaction and visual design refresh</p></header>
+                <!--<p>I provided a design refresh for the Fulcrum CATS Mobility app by reconciling the app's UI with modern Android design guidelines and by optimizing the app's interaction models and patterns.</p>-->
+                <!--<footer><a href="project.php?id=38">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=33">
+            <article style="background-image: url('assets/project_bgs/epdm.png');border-top-color: rgba(0, 114, 197, .9); border-bottom-color: rgba(0, 114, 197, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(0, 114, 197, .9);"><h1>EPDM Training</h1><p>Conceptualization, interaction design, and lesson creation</p></header>
+                <!--<p>One of the main projects I worked on at Cubic was a collection of internal training material for Cubic engineers. The lessons were built in <strong>SmartBuilder</strong>, a Flash-based eLearning software. This project involved iterative designing (to achieve adult education goals) and implementation of content.</p>-->
+                <!--<footer><a href="project.php?id=33">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=6">
+            <article style="background-image: url('assets/project_bgs/hpestation.png');border-top-color: rgba(0, 150, 214, .9); border-bottom-color: rgba(0, 150, 214, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(0, 150, 214, .9);"><h1>HP Photosmart eStation</h1><p>Interaction design and documentation management</p></header>
+                <!--<p>The HP Zeen is an Android tablet that accompanies the Photosmart eStation All-in-One, acting as the control panel both when docked and undocked. My work on the product was primarily interaction design and management of the interaction design specifications. This was my biggest non-web project.</p>-->
+                <!--<footer><a href="project.php?id=6">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=3">
+            <article style="background-image: url('assets/project_bgs/meetingsched.png');border-top-color: rgba(13, 51, 74, .9); border-bottom-color: rgba(13, 51, 74, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(13, 51, 74, .9);"><h1>Meeting Scheduling Usability Analysis</h1><p>Usability analysis and recommendations</p></header>
+                <!--<p>For my <em>Engineering Psychology (PSYC 161)</em> class, we were tasked with doing a usability analysis of a system of our choice. We chose to analyze two competing meeting scheduling web services, WhenIsGood.net and Doodle.com. We produced an extensive evaluation of the two interfaces and exceeded the assignment's requirements by offering suggested designs that would solve each site's problems.</p>-->
+                <!--<footer><a href="project.php?id=3">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=5">
+            <article style="background-image: url('assets/project_bgs/cogs220proposal.png');border-top-color: rgba(102, 102, 102, .9); border-bottom-color: rgba(102, 102, 102, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(102, 102, 102, .9);"><h1>Information Visualization Research Proposal</h1><p>Academic and user research</p></header>
+                <!--<p>For <em>Information Visualization (COGS 220)</em>, a graduate-level course led by Jim Hollan, we had to choose a topic to investigate, then write a formal proposal for future research. My project focused on efficient visualization of digital pen notes.</p>-->
+                <!--<footer><a href="project.php?id=5">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=0">
+            <article style="background-image: url('assets/project_bgs/ucsdpodcast.png');border-top-color: rgba(3, 66, 98, .9); border-bottom-color: rgba(3, 66, 98, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(3, 66, 98, .9);"><h1>UCSD Podcast Redesign</h1><p>User research, interaction design, and prototyping</p></header>
+                <!--<p>In my <em>Cognitive Design Studio (COGS 102C)</em> course at UCSD, we conducted a quarter-long user research and interaction design project in order to re-design the audio podcast system used by UCSD to let students review recordings of lectures. Through a strict user-centered design approach, we addressed a number of problems with the existing system and created a prototype of our recommended new system.</p>-->
+                <!--<footer><a href="project.php?id=0">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=48">
+            <article style="background-image: url('assets/project_bgs/iuanalysisandredesign.png');border-top-color: rgba(125, 17, 12, .9); border-bottom-color: rgba(125, 17, 12, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(125, 17, 12, .9);"><h1>IU.edu Usability Analysis and Redesign</h1><p></p></header>
+                <!--<p>We conducted a heuristic usability evaluation according to Jakob Nielsen's ten usability heuristics, summarized the results, and presented them in a demonstrative website.</p>
+<p>Using these findings, we created a new design for the website. The redesign sought primarily to increase the usability of the website, especially with respect to information architecture.</p>-->
+                <!--<footer><a href="project.php?id=48">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+        <a href="project.php?id=34">
+            <article style="background-image: url('assets/project_bgs/luganda.png');border-top-color: rgba(102, 102, 102, .9); border-bottom-color: rgba(102, 102, 102, .5);">
+                <!--<article style="border-top-color: rgb(0, 114, 197); border-bottom-color: rgba(0, 114, 197, 0.5);">-->
+                <header style="background-color:rgba(102, 102, 102, .9);"><h1>Luganda Language Report</h1><p>African language research and report</p></header>
+                <!--<p>In my <em>Languages of Africa (LIGN 108)</em> course, I conducted a thorough interview and survey of Luganda, the language of the African country Uganda. My compiled report describes the structure of the language from individual sounds to sentence syntax.</p>-->
+                <!--<footer><a href="project.php?id=34">Read more &raquo;</a></footer>-->
+            </article>
+        </a>
+
+
+    </div>
+</main>
+
+</body></html>
